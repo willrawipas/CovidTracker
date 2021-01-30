@@ -6,6 +6,8 @@
     <title>Covid Tracker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--API-->
+    <!--https://rapidapi.com/astsiatsko/api/coronavirus-monitor?endpoint=apiendpoint_745c45af-47e5-4b99-b962-9f77e164c054-->
 </head>
 <body>
     <div class="wrapper">
@@ -13,7 +15,7 @@
             <div class="total_case_box">
                 <h2>
                     <i class="fa fa-address-book" aria-hidden="true"></i>
-                    Total Cases
+                    จำนวนผู้ติดเชื้อ COVID-19 ทั่วโลก
                 </h2>
                 <p style="font-size:3rem;" id="total_cases">test</p>
             </div>
@@ -21,28 +23,28 @@
                 <div class="box">
                     <h2>
                         <i class="fa fa-user-times" aria-hidden="true"></i>
-                        Total Death
+                        จำนวนผู้เสียชีวิต
                     </h2>
                     <p style="font-size:1.5rem;" id="total_death">test</p>
                 </div>
                 <div class="box">
                     <h2>
                         <i class="fa fa-refresh" aria-hidden="true"></i>
-                        Total Recovery
+                        รักษาหายทั้งหมด
                     </h2>
                     <p style="font-size:1.5rem;" id="total_recovered">test</p>
                 </div>
                 <div class="box">
                     <h2>
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        New case
+                        ติดเชื้อใหม่วันนี้
                     </h2>
                     <p style="font-size:1.5rem;" id="new_case">test</p>
                 </div>
                 <div class="box">
                     <h2>
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                        New Death
+                        เสียชีวิตวันนี้
                     </h2>
                     <p style="font-size:1.5rem;" id="new_death">test</p>
                 </div>
@@ -50,11 +52,11 @@
         </div>
         <table class="countries_stat customers" id="countries_stat">
             <tr>
-                <th>Counrty</th>
-                <th>Cases</th>
-                <th>Deaths</th>
-                <th>Serious critical</th>
-                <th>Total</th>
+                <th>ประเทศ</th>
+                <th>ติดเชื้อสะสม</th>
+                <th>เสียชีวิตรวม</th>
+                <th>อาการหนัก</th>
+                <th>รักษาหายทั้งหมด</th>
             </tr>
         </table>
     </div>
